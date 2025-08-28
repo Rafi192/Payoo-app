@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Daisy UI CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Tailwind cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Payoo app</title>
+  </head>
+  <body
+    class="bg-[#F4F5F7] h-[100vh] flex flex-col justify-center items-center"
+  >
+    <div
+      class="h-[130px] w-[300px] bg-[url(Payoo-MFS-Resources/assets/bg.png)] bg-cover flex justify-center items-center"
+    >
+      <img src="Payoo-MFS-Resources/assets/Group.png" alt="" />
+    </div>
+    <form action="" class="bg-white rounded-2xl p-10 w-[40%] h-[32%]">
+      <div>
+        <label for="mobile" class="font-semibold">Mobile Number</label>
+        <br />
+        <input
+          type="text"
+          placeholder="Type here"
+          class="input bg-[#F4F5F7] w-full"
+        />
+      </div>
+      <div class="mt-5">
+        <label for="mobile" class="font-semibold">4 Digit PIN</label>
+        <br />
+        <input
+          type="text"
+          placeholder="Type here"
+          class="input bg-[#F4F5F7] w-full"
+        />
+      </div>
+
+      <button
+        type="button"
+        id="btn-login"
+        class="btn text-white bg-[#0874F2] mt-8 w-full rounded-2xl"
+      >
+        Submit
+      </button>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
