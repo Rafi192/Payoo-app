@@ -16,47 +16,127 @@
   </head>
   <body class="bg-[#FFFFFF]">
     <h1 class="text-center">Welcome to the HomePage</h1>
-    <nav
-      class="bg-[#FFFFFF] navbar flex justify-between h-auto max-w-[100%] border-b-2 mx-auto p-5"
-    >
-      <div class="left-bar flex justify-center items-center">
-        <img
-          src="Payoo-MFS-Resources/assets/Group.png"
-          alt=""
-          class="h-[15%] w-auto"
-        />
-        <div>
-          <h4>$<span id="amount" class="font-semibold">45000</span></h4>
-          <p id="available-balance">available balance</p>
-        </div>
-      </div>
-      <div class="rigt-bar">
-        <button
-          class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl text-gray-700"
-        >
-          <i class="fa-solid fa-right-from-bracket rotate-180"></i>Log Out
-        </button>
-      </div>
-    </nav>
 
-    <header>
-      <div class="banner p-5 mt-8">
+    <div class="upper-body bg-white">
+      <nav
+        class="bg-[#FFFFFF] navbar flex justify-between h-auto max-w-[100%] border-b-2 mx-auto p-5"
+      >
+        <div class="left-bar flex justify-center items-center">
+          <img
+            src="Payoo-MFS-Resources/assets/Group.png"
+            alt=""
+            class="h-[15%] w-auto"
+          />
+          <div>
+            <h4>$<span id="amount" class="font-semibold">45000</span></h4>
+            <p id="available-balance">available balance</p>
+          </div>
+        </div>
+        <div class="rigt-bar">
+          <button
+            class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl text-gray-700"
+          >
+            <i class="fa-solid fa-right-from-bracket rotate-180"></i>Log Out
+          </button>
+        </div>
+      </nav>
+
+      <div class="max-w-lg p-5 mx-auto mt-8">
         <h1 class="text-2xl font-bold">🔥 Welcome to Payooo!</h1>
         <p class="text-[#080808] text-gray-700">
           Enjoy easy and convenient financial services with us. Cashout charge
           is low and
         </p>
       </div>
-    </header>
 
-    <div class="cards">
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
+      <div class="p-5 mt-5 grid grid-cols-3 gap-3">
+        <div class="card text-center border-2 border-red-400 mb-5 p-4">
+          <img
+            src="/Payoo-MFS-Resources/assets/wallet1.png"
+            class="max-w-8 mx-auto"
+            alt=""
+          />
+          <p>Add Money</p>
+        </div>
+        <div class="card text-center border-2 border-red-400 mb-5 p-4">
+          <img
+            src="/Payoo-MFS-Resources/assets/purse1.png"
+            class="max-w-8 mx-auto"
+            alt=""
+          />
+          <p>Cashout</p>
+        </div>
+        <div class="card text-center border-2 border-red-400 mb-5 p-4">
+          <img
+            src="/Payoo-MFS-Resources/assets/send1.png"
+            class="max-w-8 mx-auto"
+            alt=""
+          />
+          <p>Transfer Money</p>
+        </div>
+        <div class="card text-center border-2 border-red-400 mb-5 p-4">
+          <img
+            src="/Payoo-MFS-Resources/assets/bonus1.png"
+            class="max-w-8 mx-auto"
+            alt=""
+          />
+          <p>Get Bonus</p>
+        </div>
+        <div class="card text-center border-2 border-red-400 mb-5 p-4">
+          <img
+            src="/Payoo-MFS-Resources/assets/purse1.png"
+            class="max-w-8 mx-auto"
+            alt=""
+          />
+          <p>Pay Bill</p>
+        </div>
+        <div class="card text-center border-2 border-red-400 mb-5 p-4">
+          <img
+            src="/Payoo-MFS-Resources/assets/transaction1.png"
+            class="max-w-8 mx-auto"
+            alt=""
+          />
+          <p>Transactions</p>
+        </div>
+      </div>
     </div>
+
+    <div class="lower-body min-h-96 bg-[#F4F5F7]">
+      <form action="" class="bg-white">
+        <label for="">Select a Bank</label>
+        <input
+          id="select-bank"
+          type="text"
+          placeholder="Type here"
+          class="input bg-[#F4F5F7]"
+        />
+
+        <label for="" class="">amount to add</label>
+        <input
+          id="input-pin"
+          type="text"
+          placeholder="Type here"
+          class="input bg-[#F4F5F7]"
+        />
+
+        <label for="" class="">amount to add</label>
+        <input
+          id="input-pin"
+          type="text"
+          placeholder="Type here"
+          class="input bg-[#F4F5F7]"
+        />
+
+        <label for="" class="">PIN NUmber</label>
+        <input
+          id="input-pin"
+          type="text"
+          placeholder="Type here"
+          class="input bg-[#F4F5F7]"
+        />
+      </form>
+    </div>
+
     <script
       src="https://kit.fontawesome.com/5dd2f1e910.js"
       crossorigin="anonymous"
