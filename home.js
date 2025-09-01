@@ -7,13 +7,22 @@ function getValue (id){
     return inputFieldNumber;
 }
 
+function getInnerText (id){
+    const text = document.getElementById(id)
+    const string_text = text.innerText;
+    //for converting inner text values into number for calculation
+    const textToNum = parseInt(string_text);
+    return textToNum;
+}
+
+
+
 const btn = document.getElementById('btn-submit')
  
 btn.addEventListener('click', function(e){
     e.preventDefault();
 
     console.log(getValue('select-bank'))
-
-    
+    console.log(getInnerText('amount'));
     
 })
