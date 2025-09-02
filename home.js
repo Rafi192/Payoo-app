@@ -15,6 +15,15 @@ function getInnerText (id){
     return textToNum;
 }
 
+function getInnerValue (id){
+    const text = document.getElementById(id)
+    let innerValue = text.value;
+    //for converting inner text values into number for calculation
+    // const textToNum = parseInt(string_text);
+    return innerValue;
+}
+
+
 
 
 const btn = document.getElementById('btn-submit')
@@ -26,3 +35,4 @@ btn.addEventListener('click', function(e){
     console.log(getInnerText('amount'));
     
 })
+
